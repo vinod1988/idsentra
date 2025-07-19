@@ -4,22 +4,12 @@
   "type": "module",
   "description": "🚀 A comprehensive Node.js/TypeScript utility library for building scalable microservices with logging, configuration, and API client tools. Perfect for enterprise-grade applications.",
   "keywords": [
-    "nodejs",
-    "typescript",
+    "idsentra",
     "microservices",
-    "logger",
-    "configuration",
-    "api-client",
+    "api",
     "utilities",
-    "backend",
-    "enterprise",
-    "devops",
-    "cloud",
-    "framework",
-    "library",
-    "typescript-library",
-    "nodejs-framework",
-    "enterprise-software"
+    "typescript",
+    "nodejs"
   ],
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -36,14 +26,6 @@
     "version:major": "npm version major",
     "publish:public": "npm publish --access public"
   },
-  "keywords": [
-    "idsentra",
-    "microservices",
-    "api",
-    "utilities",
-    "typescript",
-    "nodejs"
-  ],
   "author": "Ivan Digital Solutions",
   "license": "ISC",
   "repository": {
@@ -61,7 +43,7 @@
   "devDependencies": {
     "@eslint/js": "^9.31.0",
     "@types/express": "^4.17.21",
-    "@types/node": "^20.0.0",
+    "@types/node": "^20.19.9",
     "@typescript-eslint/eslint-plugin": "^8.24.0",
     "@typescript-eslint/parser": "^8.24.0",
     "eslint": "^9.31.0",

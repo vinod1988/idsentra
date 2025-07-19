@@ -5,8 +5,14 @@
  * It shows how to use the logger, configuration, API client, and other utilities.
  */
 
-import { EmojiLogger, IDSConfig, IDSApiClient, ApiResponseBuilder } from 'idsentra';
-import type { IDSLogger } from 'idsentra';
+// Import from the main index file which handles all exports
+import { 
+  EmojiLogger, 
+  IDSConfig, 
+  IDSApiClient, 
+  IDSLogger,
+  ApiResponseBuilder 
+} from '../src/index.js';
 
 /**
  * Example 1: Logger with Emoji Support
