@@ -30,12 +30,12 @@
   "license": "ISC",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ivandigitalsolutions/idsentra-core.git"
+    "url": "git+https://github.com/vinod1988/idsentra.git"
   },
   "bugs": {
-    "url": "https://github.com/ivandigitalsolutions/idsentra-core/issues"
+    "url": "https://github.com/vinod1988/idsentra/issues"
   },
-  "homepage": "https://github.com/ivandigitalsolutions/idsentra-core#readme",
+  "homepage": "https://github.com/vinod1988/idsentra#readme",
   "dependencies": {
     "axios": "^1.6.0",
     "dotenv": "^16.3.1"
