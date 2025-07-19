@@ -1,12 +1,12 @@
 /**
- * @idsentra/core Usage Examples
+ * idsentra Usage Examples
  * 
- * This file demonstrates how to use the main components of the @idsentra/core package.
+ * This file demonstrates how to use the main components of the idsentra package.
  * It shows how to use the logger, configuration, API client, and other utilities.
  */
 
-import { EmojiLogger, IDSConfig, IDSApiClient, ApiResponseBuilder } from '../src/index.js';
-import type { IDSLogger } from '../src/core/IDSLogger.js';
+import { EmojiLogger, IDSConfig, IDSApiClient, ApiResponseBuilder } from 'idsentra';
+import type { IDSLogger } from 'idsentra';
 
 /**
  * Example 1: Logger with Emoji Support
@@ -181,7 +181,7 @@ async function demonstrateRetryPolicy(logger: IDSLogger) {
 
 // Main function to run all examples
 async function main() {
-  console.log('=== @idsentra/core Usage Examples ===\n');
+  console.log('=== idsentra Usage Examples ===\n');
   
   // Example 1: Logger
   console.log('=== 1. Logger Example ===');

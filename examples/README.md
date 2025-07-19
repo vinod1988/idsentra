@@ -1,12 +1,12 @@
-# @idsentra/core Examples
+# idsentra Examples
 
-This directory contains example code demonstrating how to use the `@idsentra/core` package.
+This directory contains example code demonstrating how to use the `idsentra` package.
 
 ## Prerequisites
 
 - Node.js 14.x or later
 - npm or yarn
-- @idsentra/core package installed in your project
+- idsentra package installed in your project
 
 ## Running the Examples
 

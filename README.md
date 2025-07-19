@@ -1,6 +1,32 @@
-# @idsentra/core
+<meta name="description" content="Idsentra - A comprehensive Node.js/TypeScript utility library for building scalable microservices with logging, configuration, and API client tools. Perfect for enterprise-grade applications.">
+<meta name="keywords" content="idsentra, nodejs, typescript, microservices, logger, configuration, api client, utilities, backend development, node.js framework, typescript library, enterprise software, devops, cloud native">
 
-Core utilities for Idsentra microservices platform - A collection of shared utilities for building consistent, reliable, and maintainable microservices in Node.js/TypeScript.
+# 🚀 Idsentra
+
+[![npm version](https://img.shields.io/npm/v/idsentra.svg?style=flat-square)](https://www.npmjs.com/package/idsentra)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square)](https://opensource.org/licenses/MIT)
+[![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=flat-square&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+[![Node.js](https://img.shields.io/badge/Node.js-43853D?style=flat-square&logo=node.js&logoColor=white)](https://nodejs.org/)
+
+**Idsentra** is a powerful, production-ready utility library for Node.js and TypeScript developers building microservices and enterprise applications. It provides essential tools for logging, configuration management, and API communication, following modern development best practices.
+
+## 🌟 Key Features
+
+- **Unified Logging System** - Structured, level-based logging with emoji support and context tracking
+- **Configuration Management** - Environment-aware configuration with type safety and validation
+- **API Client** - Robust HTTP client with retry mechanisms and interceptors
+- **Response Formatting** - Consistent API response structures for better API design
+- **Developer Experience** - TypeScript-first approach with excellent IDE support
+- **Production Ready** - Battle-tested in high-load environments
+
+## 📊 Why Choose Idsentra?
+
+- **Performance Optimized** - Built with performance in mind for high-throughput applications
+- **Modular Design** - Use only what you need, keep your bundle size minimal
+- **Type Safe** - Full TypeScript support with comprehensive type definitions
+- **Extensible** - Easy to extend and customize for your specific needs
+- **Well Documented** - Comprehensive documentation and examples to get you started quickly
+- **Active Maintenance** - Regularly updated with new features and security patches
 
 ### IDSentra Core Utilities
 
@@ -19,13 +45,13 @@ IDS + Centra (centralized) → core API utilities
 
 ```bash
 # Using npm
-npm install @idsentra/core
+npm install idsentra
 
 # Using yarn
-yarn add @idsentra/core
+yarn add idsentra
 
 # Using pnpm
-pnpm add @idsentra/core
+pnpm add idsentra
 ```
 
 ## 🔧 Prerequisites
@@ -42,7 +68,7 @@ pnpm add @idsentra/core
 Standardized response formatting for all API endpoints.
 
 ```typescript
-import { ApiResponseBuilder } from '@idsentra/core';
+import { ApiResponseBuilder } from 'idsentra';
 
 // Success response
 const successResponse = ApiResponseBuilder.success('Operation successful', { id: 123 });
@@ -56,7 +82,7 @@ const errorResponse = ApiResponseBuilder.error('Operation failed', new Error('So
 Configurable HTTP client with retry mechanism and request/response interceptors.
 
 ```typescript
-import { IDSApiClient } from '@idsentra/core';
+import { IDSApiClient } from 'idsentra';
 
 const apiClient = new IDSApiClient({
   baseURL: 'https://api.example.com',
@@ -73,7 +99,7 @@ const response = await apiClient.get('/users/123');
 Centralized configuration with environment variable support.
 
 ```typescript
-import { IDSConfig } from '@idsentra/core';
+import { IDSConfig } from 'idsentra';
 
 // Initialize with defaults
 const config = new IDSConfig({
@@ -93,7 +119,7 @@ const port = config.getNumber('PORT');
 Structured logging with support for different log levels and context.
 
 ```typescript
-import { ConsoleLogger } from '@idsentra/core';
+import { ConsoleLogger } from 'idsentra';
 
 const logger = new ConsoleLogger({ service: 'auth-service' });
 
@@ -112,7 +138,7 @@ logger.error('Login failed', new Error('Invalid credentials'));
 ### Basic Usage Example
 
 ```typescript
-import { ConsoleLogger, IDSConfig, IDSApiClient, ApiResponseBuilder } from '@idsentra/core';
+import { ConsoleLogger, IDSConfig, IDSApiClient, ApiResponseBuilder } from 'idsentra';
 
 // 1. Setup logger
 const logger = new ConsoleLogger({ component: 'example-app' });
@@ -142,7 +168,7 @@ async function fetchData() {
 
 ## 📚 Examples
 
-The `/examples` directory contains comprehensive examples demonstrating how to use the `@idsentra/core` package:
+The `/examples` directory contains comprehensive examples demonstrating how to use the `idsentra` package:
 
 1. **Basic Usage** (`basic-usage.ts`):
    - Logger setup and usage

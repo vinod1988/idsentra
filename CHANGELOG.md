@@ -1,6 +1,6 @@
 # Changelog
 
-All notable changes to the `@idsentra/core` package will be documented in this file.
+All notable changes to the `idsentra` package will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
@@ -38,7 +38,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Example usage in README
 
 ### Changed
-- Renamed package to `@idsentra/core`
+- Renamed package to `idsentra` (unscoped)
 - Updated project structure for better maintainability
 - Improved documentation and code comments
 

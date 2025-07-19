@@ -1,8 +1,26 @@
 {
-  "name": "@idsentra/core",
+  "name": "idsentra",
   "version": "1.0.0",
   "type": "module",
-  "description": "Core utilities for Idsentra microservices platform",
+  "description": "🚀 A comprehensive Node.js/TypeScript utility library for building scalable microservices with logging, configuration, and API client tools. Perfect for enterprise-grade applications.",
+  "keywords": [
+    "nodejs",
+    "typescript",
+    "microservices",
+    "logger",
+    "configuration",
+    "api-client",
+    "utilities",
+    "backend",
+    "enterprise",
+    "devops",
+    "cloud",
+    "framework",
+    "library",
+    "typescript-library",
+    "nodejs-framework",
+    "enterprise-software"
+  ],
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {

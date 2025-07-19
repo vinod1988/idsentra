@@ -1,0 +1,20 @@
+# Allow all web crawlers to access all parts of the site
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://www.npmjs.com/package/idsentra/sitemap.xml
+
+# Crawl-delay: 10
+
+# Disallow crawling of node_modules and other non-essential directories
+Disallow: /node_modules/
+Disallow: /dist/
+Disallow: /coverage/
+Disallow: /test/
+Disallow: /examples/
+
+# Allow all other files
+Allow: /*.js$
+Allow: /*.ts$
+Allow: /*.md$
