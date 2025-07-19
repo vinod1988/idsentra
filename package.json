@@ -1,6 +1,6 @@
 {
   "name": "@idsentra/core",
-  "version": "0.2.0",
+  "version": "1.0.0",
   "type": "module",
   "description": "Core utilities for Idsentra microservices platform",
   "main": "dist/index.js",
