@@ -16,18 +16,23 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - HTTP and header utilities
 - Comprehensive TypeScript type definitions
 - Unit test setup
+- Optional peer dependency metadata for Express
 
 ### Changed
 - Restructured project to follow monorepo patterns
 - Updated all dependencies to latest stable versions
 - Improved error handling and type safety
 - Standardized API response format across all utilities
+- Updated Express peer dependency to support latest version (>=5.1.0) with backward compatibility (>=4.18.0)
+- Updated @types/express to v5.0.3 for better TypeScript support
 
 ### Fixed
 - Resolved TypeScript type issues
 - Fixed error handling in retry mechanism
 - Addressed all linting warnings and errors
 - Ensured consistent code style throughout the project
+- Fixed peer dependency conflicts that required --legacy-peer-deps flag
+- Made Express peer dependency optional to improve installation experience
 
 ## [0.2.0] - 2025-07-19
 
