@@ -1,7 +1,7 @@
 import dotenv from 'dotenv';
 import path from 'path';
-import type { IDSLogger } from './IDSLogger';
-import { ConsoleLogger } from './IDSLogger';
+import type { IDSLogger } from './IDSLogger.js';
+import { ConsoleLogger } from './IDSLogger.js';
 
 /**
  * Configuration options for IDSConfig
@@ -184,5 +184,31 @@ class IDSConfig {
   }
 }
 
-// Default config instance
-export const config = IDSConfig.getInstance();
+// Default config instance - lazy initialization
+export const config = {
+  getInstance: () => IDSConfig.getInstance(),
+  get: <T = string>(key: string, defaultValue?: T): T | undefined => {
+    return IDSConfig.getInstance().get<T>(key, defaultValue);
+  },
+  getRequired: <T = string>(key: string, defaultValue?: T): T => {
+    return IDSConfig.getInstance().getRequired<T>(key, defaultValue);
+  },
+  getNumber: (key: string, defaultValue: number): number => {
+    return IDSConfig.getInstance().getNumber(key, defaultValue);
+  },
+  getBoolean: (key: string, defaultValue: boolean): boolean => {
+    return IDSConfig.getInstance().getBoolean(key, defaultValue);
+  },
+  getAll: () => {
+    return IDSConfig.getInstance().getAll();
+  },
+  isProduction: () => {
+    return IDSConfig.getInstance().isProduction();
+  },
+  isDevelopment: () => {
+    return IDSConfig.getInstance().isDevelopment();
+  },
+  isTest: () => {
+    return IDSConfig.getInstance().isTest();
+  }
+};

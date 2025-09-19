@@ -7,6 +7,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.2.0] - 2025-09-19
+
+### Fixed
+- Fixed ES module import issues that caused "idsentra not available" errors
+- Corrected package.json main entry point from `dist/index.js` to `dist/src/index.js`
+- Added proper ES module exports configuration
+- Fixed all internal import paths to include `.js` extensions for ES modules
+- Made IDSConfig singleton initialization lazy to prevent import-time errors
+- Ensured compatibility with both CommonJS and ES module environments
+
 ## [1.1.0] - 2025-09-19
 
 ### Added

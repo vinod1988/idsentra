@@ -1,7 +1,7 @@
 import type { AxiosInstance, AxiosRequestConfig, AxiosError } from 'axios';
 import axios from 'axios';
-import type { IDSLogger } from './IDSLogger';
-import type { StandardApiResponse } from './IDSApiResponse';
+import type { IDSLogger } from './IDSLogger.js';
+import type { StandardApiResponse } from './IDSApiResponse.js';
 
 /**
  * Configuration for the API client
