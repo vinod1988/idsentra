@@ -1,4 +1,4 @@
-import type { IDSLogger } from '../core/IDSLogger';
+import type { IDSLogger } from '../core/IDSLogger.js';
 
 export interface RetryPolicyOptions {
   maxRetries?: number;

@@ -1,6 +1,6 @@
 import type { Request, Response, NextFunction } from 'express';
-import type { IDSLogger } from '../core/IDSLogger';
-import { ConsoleLogger } from '../core/IDSLogger';
+import type { IDSLogger } from '../core/IDSLogger.js';
+import { ConsoleLogger } from '../core/IDSLogger.js';
 
 /**
  * Utility class for common HTTP operations
